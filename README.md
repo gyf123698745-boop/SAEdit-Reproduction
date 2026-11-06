@@ -2,6 +2,10 @@
 
 SAEdit uses sparse autoencoders to steer text-token representations during image generation. This project reproduces selected FLUX.1-dev inference conditions and examines smiling, reconstruction effects and a baldness failure case. [Paper](https://arxiv.org/abs/2510.05081) · [Official implementation](https://github.com/ronen94/SAEdit)
 
+## Scope and contribution
+
+The SAEdit authors developed the method and released the official implementation. This project ran selected inference conditions and analyzed matched controls and a failed baldness edit. Codex and other AI coding tools assisted substantially with implementation, debugging, and repository preparation.
+
 ## A. Smiling: exploratory strength control
 
 ![Seed 123 smiling strength](assets/smiling_seed123.jpg)
@@ -25,7 +29,7 @@ The repeated Official 0 is pixel-identical across the original and supplementary
 
 ![Reconstruction controls](assets/reconstruction_seed123.jpg)
 
-Baseline → Official 0 isolates changes introduced by the full reconstruction path; Official 0 → Official .8 better isolates direction injection. Target-only 0 provides its own reconstruction control. These are controlled path comparisons, not proof that every image difference has a single cause.
+Baseline → Official 0 measures the effect of enabling the reconstruction callback; Official 0 → Official .8 better isolates direction injection. Target-only 0 provides its own reconstruction control. These are controlled path comparisons, not proof that every image difference has a single cause.
 
 | Directly computed pair | Seed 42 | Seed 123 |
 |---|---:|---:|
@@ -42,7 +46,7 @@ Baseline → Official 0 isolates changes introduced by the full reconstruction p
 
 ![Direct bald prompt versus editing](assets/baldness_direct_prompt.jpg)
 
-The direct prompt is `a portrait photo of a bald man in a garden`; all other generation settings remain fixed.
+The direct prompt is `a portrait photo of a bald man in a garden`; the seed and sampling settings match the baseline.
 
 - **Visual finding:** Official .4/.8 retain dense hair; there is no clear progressive baldness. Expression changes occur instead. LPIPS vs Official 0 is **0.02274 / 0.05254**, which measures difference, not editing success.
 - **Direct-prompt control:** unmodified FLUX produces a clearly bald person. Age appearance, identity cues, clothing and framing also change; this is not an identity-preserving edit.
@@ -50,7 +54,7 @@ The direct prompt is `a portrait photo of a bald man in a garden`; all other gen
 - **Intervention works numerically:** at saturated .4/.8, target SAE activation changes have norms **5.99314 / 11.98626**; decoded target-embedding differences from zero reconstruction are **6.95703 / 13.90733**. Token matching is correct. The latter numbers come from unchanged-callback representation replay, not a rerun of the old image denoising trajectories.
 - **Interpretation:** no clear loading/token/no-op failure was identified. Direction specificity, transfer from pooled sentence features to `man`, and conditioning/timing effects remain hypotheses. Numerical injection success is not semantic editing success; one failure does not establish a general defect of SAEdit.
 
-The complete callback replay is in the consolidated evidence file.
+The [consolidated evidence](data/evidence.json) includes the recorded callback replay.
 
 ## Method and implementation boundary
 
@@ -72,7 +76,7 @@ Intervention is recomputed from cached original activations, not accumulated. A 
 
 ## Experiment data
 
-[16 generation records](data/runs.json) map to 14 distinct original PNGs. [31 recorded LPIPS pairs](data/lpips.csv) retain the original values. [Evidence](data/evidence.json) contains original configuration snapshots, model verification, source hashes and callback replay. Evidence references are keys in that JSON. Pre-repair T5 outputs are excluded. LPIPS measures perceptual difference and does not establish semantic success or identity preservation.
+[16 generation records](data/runs.json) map to 14 distinct original PNGs. [31 recorded LPIPS pairs](data/lpips.csv) retain the original values. [Evidence](data/evidence.json) contains original configuration snapshots, model verification, source hashes and callback replay. Evidence references are keys in that JSON. Pre-repair T5 outputs are excluded. LPIPS measures perceptual difference and does not establish semantic success or identity preservation. Scores use AlexNet LPIPS v0.1 on full-resolution RGB images normalized to [-1, 1]. Repeated pairs are retained as records.
 
 ## Environment and reproduction
 
@@ -102,6 +106,6 @@ Modes: `baseline`, `official`, `target_only`, `direct_prompt`; attributes: `smil
 
 ## Limits and next questions
 
-This stage covers two seeds for initial smiling controls and one seed for a strength scan and baldness. It does not reproduce all paper benchmarks, train a SAE, establish attribute generalization, prove strict identity preservation, or show Target-only superiority. Prompt Pair and injection-schedule ablations remain unperformed. Possible next work is a targeted study of bald-direction feature contributions and conditioning, followed by editing-effectiveness evaluation paired with preservation checks. These are research options, not experiments already executed.
+No VQA, blinded evaluation, or quantitative identity assessment was performed. This stage covers two seeds for initial smiling controls and one seed for a strength scan and baldness. It does not reproduce all paper benchmarks, train a SAE, establish attribute generalization, prove strict identity preservation, or show Target-only superiority. Prompt Pair and injection-schedule ablations remain unperformed. Possible next work is a targeted study of bald-direction feature contributions and conditioning, followed by editing-effectiveness evaluation paired with preservation checks. These are research options, not experiments already executed.
 
 See [attribution and licensing notes](NOTICE.md) and [citation](CITATION.bib).

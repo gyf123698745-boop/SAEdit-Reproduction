@@ -3,7 +3,7 @@
 Packaging-only addition: syntax checked, not used to generate the archived results.
 Run from the pinned upstream checkout after setup_upstream.py.
 """
-import argparse,hashlib,json,time
+import argparse,hashlib,json,math,time
 from pathlib import Path
 p=argparse.ArgumentParser()
 p.add_argument('--attribute',choices=['smiling','baldness'],required=True)
@@ -12,6 +12,8 @@ p.add_argument('--factor',type=float,default=0)
 p.add_argument('--seed',type=int,default=123)
 p.add_argument('--output',type=Path,required=True)
 a=p.parse_args()
+if not math.isfinite(a.factor) or a.factor < 0:
+    p.error('Factor must be finite and nonnegative')
 if a.mode in ['baseline','direct_prompt'] and a.factor!=0:p.error('No injection factor for a no-callback run')
 if a.output.exists():raise FileExistsError('Refusing to overwrite '+str(a.output))
 import torch,yaml

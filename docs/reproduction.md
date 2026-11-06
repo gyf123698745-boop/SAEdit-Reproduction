@@ -3,17 +3,26 @@
 This release separates immutable archived evidence from a new portable entry point. Packaging did not rerun inference or metrics. No automatic scheduler/controller is included in the default path.
 
 1. Clone the official repository at the commit in README. Run `scripts/setup_upstream.py` against it. It refuses differing destination files, preserves `src/saedit.py`, and creates only a device-aligned callback copy and local runners/tools.
-2. Prepare a compatible Linux/CUDA environment using the recorded inference dependencies and upstream instructions. The GPU used in the experiments was an RTX 3090 with 24 GB; each Slurm generation job requested 48 GB RAM. The new portable runner has not been GPU-tested in this packaging task.
+2. Prepare a compatible Linux/CUDA environment using the recorded inference dependencies and upstream instructions. The GPU used in the experiments was an RTX 3090 with 24 GB; each Slurm generation job requested 48 GB RAM. The new portable runner has not been GPU-tested in an end-to-end GPU run.
 3. Obtain authorized FLUX.1-dev and official SAE copies separately. Arrange the pipeline at `models/` and SAE at `models/sae/matryoshka_sae_top_300`. Never add weights or authentication files to this repository.
 4. Integrity: `examples/capture_model_manifests.py` captures expected files/hashes from model-provider metadata; see the archived manifest copies in `records/integrity/`. It may require network and local authentication when deliberately run. Review its pinned revisions before use. Run `python examples/verify_model_files.py` from the upstream checkout, with expected manifests in `experiments/flux_official_manifest.json` and `experiments/sae_official_manifest.json`. This computes fresh hashes and mtime records; do not copy old verification reports as a substitute for verification. The generation gate checks that verified local files have not changed.
 5. Run `examples/run_case.py` as shown in README. No network model download is performed by this runner. Select exactly one condition and a new output directory per invocation. It records settings, YAML hash and direction for edited runs, and refuses overwrite. Baseline/direct_prompt use no SAE callback. The default prompt and all fixed generation settings match the reported Seed123 experiments.
-6. For Slurm, set `SAEDIT_ROOT` and supply your site's partition/QOS with `scripts/run_case.slurm`. The template contains no account, hostname or private path. Submission is manual; do not run broad matrices accidentally.
+6. For Slurm, create a `.venv` in the upstream checkout or adjust the activation line, set `SAEDIT_ROOT` to the checkout’s absolute path, and supply your site's partition/QOS with `scripts/run_case.slurm`. The template contains no account, hostname or private path. Submission is manual; do not run broad matrices accidentally.
 7. Evaluation used additional `requirements-evaluation.txt` dependencies (originally isolated via a separate PYTHONPATH directory). LPIPS model/AlexNet evaluation weights must be prepared separately; they are not bundled. Archived analysis scripts document exact RGB normalization and pair definitions. They contain historical job-directory references and should be read as provenance; adapt input/output paths explicitly before a new evaluation. Never overwrite archived scores.
 
 The archived smiling/bald jobs used the official YAMLs with all 102 pairs, default PCA/SVD aggregation and token `man`. Do not edit the pairs and still describe the result as the same experiment. Some archive scripts expect `matrix.json`; its original record is `configs/historical_matrix.json`, including planned but unexecuted conditions. Use [generation records](../data/runs.json) and [consolidated evidence](../data/evidence.json) to identify what actually ran.
 
-## Resource evidence, not guarantees
+## Recorded runtimes
 
 The four-condition smiling supplement took 18m21s, bald three-condition generation 15m28s, and the direct-prompt-plus-replay diagnosis 4m50s in the original environment. Direction extraction adds substantial setup work; timing depends on hardware, storage and offload. A single-GPU 50-minute Slurm template leaves headroom, rather than promising a runtime or memory peak. No new jobs were submitted during packaging.
 
+## Historical batch replay
+
 For historical batch replay, copy the relevant archived Python scripts to upstream examples/, copy configs/historical_matrix.json to matrix.json, and supply the archived scripts with their expected experiments/ paths and job identifiers. Use data/runs.json to reconstruct input paths including shared Official 0 images, and data/evidence.json to recover the corresponding historical metrics/config snapshots. Generate fresh model verification reports for your machine. The archived analysis scripts document the original evaluation commands and paths.
+
+## Reading the data
+
+- In [runs.json](../data/runs.json), `path` resolves inside this repository. Several run IDs can reference the same PNG. `archive_image_path` and `origin` identify historical locations. Use `sha256` to check the current PNG.
+- `official_yaml_path` resolves against the pinned upstream SAEdit checkout. The YAML hashes record the inputs used for the experiments.
+- `config_evidence` and the LPIPS CSV’s `source_record` identify keys under `records` in [evidence.json](../data/evidence.json). They are archive identifiers. Paths inside those snapshots describe historical inputs, outputs, or source files. The `archive/` prefix replaces a local directory prefix and is also an identifier.
+- In [lpips.csv](../data/lpips.csv), image IDs join to the generation records and the image path columns resolve inside this repository.
