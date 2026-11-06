@@ -1,0 +1,16 @@
+models/
+.venv*/
+.eval_deps/
+__pycache__/
+*.pyc
+.env*
+.ssh/
+*.pem
+*.key
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.zip
+.cache/
+local-private/

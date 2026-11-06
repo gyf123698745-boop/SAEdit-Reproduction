@@ -1,0 +1,120 @@
+{
+  "revision": "3de623fc3c33e44ffbe2bad470d0f45bccf2eb21",
+  "files": [
+    {
+      "file": "model_index.json",
+      "size": 536,
+      "sha256": null
+    },
+    {
+      "file": "scheduler/scheduler_config.json",
+      "size": 273,
+      "sha256": null
+    },
+    {
+      "file": "text_encoder/config.json",
+      "size": 613,
+      "sha256": null
+    },
+    {
+      "file": "text_encoder/model.safetensors",
+      "size": 246144352,
+      "sha256": "893d67a23f4693ed42cdab4cbad7fe3e727cf59609c40da28a46b5470f9ed082"
+    },
+    {
+      "file": "text_encoder_2/config.json",
+      "size": 782,
+      "sha256": null
+    },
+    {
+      "file": "text_encoder_2/model-00001-of-00002.safetensors",
+      "size": 4994582224,
+      "sha256": "ec87bffd1923e8b2774a6d240c922a41f6143081d52cf83b8fe39e9d838c893e"
+    },
+    {
+      "file": "text_encoder_2/model-00002-of-00002.safetensors",
+      "size": 4530066360,
+      "sha256": "a5640855b301fcdbceddfa90ae8066cd9414aff020552a201a255ecf2059da00"
+    },
+    {
+      "file": "text_encoder_2/model.safetensors.index.json",
+      "size": 19885,
+      "sha256": null
+    },
+    {
+      "file": "tokenizer/merges.txt",
+      "size": 524619,
+      "sha256": null
+    },
+    {
+      "file": "tokenizer/special_tokens_map.json",
+      "size": 588,
+      "sha256": null
+    },
+    {
+      "file": "tokenizer/tokenizer_config.json",
+      "size": 705,
+      "sha256": null
+    },
+    {
+      "file": "tokenizer/vocab.json",
+      "size": 1059962,
+      "sha256": null
+    },
+    {
+      "file": "tokenizer_2/special_tokens_map.json",
+      "size": 2543,
+      "sha256": null
+    },
+    {
+      "file": "tokenizer_2/spiece.model",
+      "size": 791656,
+      "sha256": "d60acb128cf7b7f2536e8f38a5b18a05535c9e14c7a355904270e15b0945ea86"
+    },
+    {
+      "file": "tokenizer_2/tokenizer.json",
+      "size": 2424235,
+      "sha256": null
+    },
+    {
+      "file": "tokenizer_2/tokenizer_config.json",
+      "size": 20817,
+      "sha256": null
+    },
+    {
+      "file": "transformer/config.json",
+      "size": 378,
+      "sha256": null
+    },
+    {
+      "file": "transformer/diffusion_pytorch_model-00001-of-00003.safetensors",
+      "size": 9983040304,
+      "sha256": "d86a3038eacaa720682cb9b1da3c49fecf8a3ded605af4def6061eaa18903eb8"
+    },
+    {
+      "file": "transformer/diffusion_pytorch_model-00002-of-00003.safetensors",
+      "size": 9949328904,
+      "sha256": "5e830704a83aa938dfaf23da308100a1c44b83fa084283abf1d163ea727e5f7a"
+    },
+    {
+      "file": "transformer/diffusion_pytorch_model-00003-of-00003.safetensors",
+      "size": 3870584832,
+      "sha256": "0d9c7c663217d1c3d44a6deed4e1cf1ac09fbc2c4137c47de1e3d74c959833de"
+    },
+    {
+      "file": "transformer/diffusion_pytorch_model.safetensors.index.json",
+      "size": 121262,
+      "sha256": null
+    },
+    {
+      "file": "vae/config.json",
+      "size": 820,
+      "sha256": null
+    },
+    {
+      "file": "vae/diffusion_pytorch_model.safetensors",
+      "size": 167666902,
+      "sha256": "f5b59a26851551b67ae1fe58d32e76486e1e812def4696a4bea97f16604d40a3"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "status": "planned; not executed",
+  "resolution": 1024,
+  "steps": 40,
+  "guidance_scale": 3.5,
+  "max_sequence_length": 256,
+  "seeds": [42, 123, 2026],
+  "cases": [
+    {"id": "smile_portrait", "prompt": "a portrait photo of a man in a garden", "token": "man", "variation": "smiling_man.yaml", "target_prompt": "a portrait photo of a smiling man in a garden"},
+    {"id": "old_woman", "prompt": "a portrait photo of a woman in a library", "token": "woman", "variation": "old_woman.yaml", "target_prompt": "a portrait photo of an old woman in a library"},
+    {"id": "surprised_woman", "prompt": "a portrait photo of a woman in a cafe", "token": "woman", "variation": "surprised_woman.yaml", "target_prompt": "a portrait photo of a surprised woman in a cafe"}
+  ],
+  "conditions": [
+    {"mode": "baseline", "factor": 0},
+    {"mode": "official", "factor": 0},
+    {"mode": "official", "factor": 0.8},
+    {"mode": "target_only", "factor": 0.8}
+  ],
+  "notes": "Independent small benchmark, not the paper's full 21-prompt benchmark. Preserve official YAML lists. Target-only is a diagnostic variant. Run one case/seed per bounded Slurm job; checkpoint each image."
+}

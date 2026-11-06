@@ -1,0 +1,5804 @@
+{
+  "archive_commit": "36f8f400c8e41dd53f5f4e9e580e048450b6c8e5",
+  "description": "Keys are original archive paths, not relative links. Nested paths in historical records describe the original execution environment. Run and LPIPS evidence fields resolve to keys below. Byte-identical JSON snapshots are stored once.",
+  "records": {
+    "records/matrix_3124956/metrics.json": {
+      "prompt": "a portrait photo of a man in a garden",
+      "seed": 42,
+      "case": {
+        "id": "smile_portrait",
+        "prompt": "a portrait photo of a man in a garden",
+        "token": "man",
+        "variation": "smiling_man.yaml",
+        "target_prompt": "a portrait photo of a smiling man in a garden"
+      },
+      "resolution": 1024,
+      "steps": 40,
+      "cfg": 3.5,
+      "pair_count": 102,
+      "modes": {
+        "official": "all-token reconstruction",
+        "target_only": "target-token replacement diagnostic"
+      },
+      "runs": [
+        {
+          "file": "baseline_0.0.png",
+          "mode": "baseline",
+          "factor": 0,
+          "seconds": 196.14715361595154,
+          "mae_vs_baseline": 0.0,
+          "mse_vs_baseline": 0.0
+        },
+        {
+          "file": "official_0.0.png",
+          "mode": "official",
+          "factor": 0,
+          "seconds": 163.5178370475769,
+          "mae_vs_baseline": 2.2595272064208984,
+          "mse_vs_baseline": 17.53057289123535
+        },
+        {
+          "file": "official_0.8.png",
+          "mode": "official",
+          "factor": 0.8,
+          "seconds": 185.10197353363037,
+          "mae_vs_baseline": 2.8743507862091064,
+          "mse_vs_baseline": 35.70121383666992
+        },
+        {
+          "file": "target_only_0.8.png",
+          "mode": "target_only",
+          "factor": 0.8,
+          "seconds": 185.8880913257599,
+          "mae_vs_baseline": 2.233930826187134,
+          "mse_vs_baseline": 27.274147033691406
+        }
+      ],
+      "model_revision": "3de623fc3c33e44ffbe2bad470d0f45bccf2eb21",
+      "model_integrity_verified": true,
+      "injection_numerics": [
+        {
+          "mode": "official",
+          "factor": 0,
+          "step": 0,
+          "scale": 0.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 0,
+          "actual_increment_norm": 0.0,
+          "requested_increment_norm": 0.0
+        },
+        {
+          "mode": "official",
+          "factor": 0,
+          "step": 19,
+          "scale": 0.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 0,
+          "actual_increment_norm": 0.0,
+          "requested_increment_norm": 0.0
+        },
+        {
+          "mode": "official",
+          "factor": 0,
+          "step": 39,
+          "scale": 0.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 0,
+          "actual_increment_norm": 0.0,
+          "requested_increment_norm": 0.0
+        },
+        {
+          "mode": "official",
+          "factor": 0.8,
+          "step": 0,
+          "scale": 0.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 0,
+          "actual_increment_norm": 0.0,
+          "requested_increment_norm": 0.0
+        },
+        {
+          "mode": "official",
+          "factor": 0.8,
+          "step": 19,
+          "scale": 12.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 6117,
+          "actual_increment_norm": 11.992889404296875,
+          "requested_increment_norm": 11.992945671081543
+        },
+        {
+          "mode": "official",
+          "factor": 0.8,
+          "step": 39,
+          "scale": 12.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 6117,
+          "actual_increment_norm": 11.992889404296875,
+          "requested_increment_norm": 11.992945671081543
+        },
+        {
+          "mode": "target_only",
+          "factor": 0.8,
+          "step": 0,
+          "scale": 0.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 0,
+          "actual_increment_norm": 0.0,
+          "requested_increment_norm": 0.0
+        },
+        {
+          "mode": "target_only",
+          "factor": 0.8,
+          "step": 19,
+          "scale": 12.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 6117,
+          "actual_increment_norm": 11.992889404296875,
+          "requested_increment_norm": 11.992945671081543
+        },
+        {
+          "mode": "target_only",
+          "factor": 0.8,
+          "step": 39,
+          "scale": 12.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 6117,
+          "actual_increment_norm": 11.992889404296875,
+          "requested_increment_norm": 11.992945671081543
+        }
+      ]
+    },
+    "records/matrix_3124995/metrics.json": {
+      "prompt": "a portrait photo of a man in a garden",
+      "seed": 123,
+      "case": {
+        "id": "smile_portrait",
+        "prompt": "a portrait photo of a man in a garden",
+        "token": "man",
+        "variation": "smiling_man.yaml",
+        "target_prompt": "a portrait photo of a smiling man in a garden"
+      },
+      "resolution": 1024,
+      "steps": 40,
+      "cfg": 3.5,
+      "pair_count": 102,
+      "modes": {
+        "official": "all-token reconstruction",
+        "target_only": "target-token replacement diagnostic"
+      },
+      "runs": [
+        {
+          "file": "baseline_0.0.png",
+          "mode": "baseline",
+          "factor": 0,
+          "seconds": 193.87737345695496,
+          "mae_vs_baseline": 0.0,
+          "mse_vs_baseline": 0.0
+        },
+        {
+          "file": "official_0.0.png",
+          "mode": "official",
+          "factor": 0,
+          "seconds": 189.35310554504395,
+          "mae_vs_baseline": 6.97741174697876,
+          "mse_vs_baseline": 225.56919860839844
+        },
+        {
+          "file": "official_0.8.png",
+          "mode": "official",
+          "factor": 0.8,
+          "seconds": 179.86584568023682,
+          "mae_vs_baseline": 8.607623100280762,
+          "mse_vs_baseline": 306.92962646484375
+        },
+        {
+          "file": "target_only_0.8.png",
+          "mode": "target_only",
+          "factor": 0.8,
+          "seconds": 189.63431239128113,
+          "mae_vs_baseline": 7.0784149169921875,
+          "mse_vs_baseline": 238.9234161376953
+        }
+      ],
+      "model_revision": "3de623fc3c33e44ffbe2bad470d0f45bccf2eb21",
+      "model_integrity_verified": true,
+      "sae_revision": "51c3ac09815815dbbcf7491148507a930e0d7944",
+      "source_sha256": {
+        "<UPSTREAM_ROOT>/examples/run_matrix.py": "0bda686bd3ea5c4b598dd3603389380ab0b005029a7f09aa5a01251ccfbbb3dc",
+        "src/saedit_cpu.py": "005247c164dec3d696d9f98ae7a74b02beb5d8c12b7c499d3c63f07f8c5b0682",
+        "src/models/matryoshka_sae.py": "17c9042ce3c15c12f5165e413d3d58d0455e2805c866eaa36c9e3ef1c7639178",
+        "src/models/sae_base.py": "d66bcf30dcb9df17ed349686ed5dd0fe1d34ef070f44fbbd88b0e716963bce63"
+      },
+      "injection_numerics": [
+        {
+          "mode": "official",
+          "factor": 0,
+          "step": 0,
+          "scale": 0.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 0,
+          "actual_increment_norm": 0.0,
+          "requested_increment_norm": 0.0
+        },
+        {
+          "mode": "official",
+          "factor": 0,
+          "step": 19,
+          "scale": 0.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 0,
+          "actual_increment_norm": 0.0,
+          "requested_increment_norm": 0.0
+        },
+        {
+          "mode": "official",
+          "factor": 0,
+          "step": 39,
+          "scale": 0.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 0,
+          "actual_increment_norm": 0.0,
+          "requested_increment_norm": 0.0
+        },
+        {
+          "mode": "official",
+          "factor": 0.8,
+          "step": 0,
+          "scale": 0.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 0,
+          "actual_increment_norm": 0.0,
+          "requested_increment_norm": 0.0
+        },
+        {
+          "mode": "official",
+          "factor": 0.8,
+          "step": 19,
+          "scale": 12.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 6117,
+          "actual_increment_norm": 11.992889404296875,
+          "requested_increment_norm": 11.992945671081543
+        },
+        {
+          "mode": "official",
+          "factor": 0.8,
+          "step": 39,
+          "scale": 12.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 6117,
+          "actual_increment_norm": 11.992889404296875,
+          "requested_increment_norm": 11.992945671081543
+        },
+        {
+          "mode": "target_only",
+          "factor": 0.8,
+          "step": 0,
+          "scale": 0.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 0,
+          "actual_increment_norm": 0.0,
+          "requested_increment_norm": 0.0
+        },
+        {
+          "mode": "target_only",
+          "factor": 0.8,
+          "step": 19,
+          "scale": 12.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 6117,
+          "actual_increment_norm": 11.992889404296875,
+          "requested_increment_norm": 11.992945671081543
+        },
+        {
+          "mode": "target_only",
+          "factor": 0.8,
+          "step": 39,
+          "scale": 12.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 6117,
+          "actual_increment_norm": 11.992889404296875,
+          "requested_increment_norm": 11.992945671081543
+        }
+      ]
+    },
+    "records/supplement_3125702/official_0.0.png.config.json": {
+      "prompt": "a portrait photo of a man in a garden",
+      "seed": 123,
+      "height": 1024,
+      "width": 1024,
+      "steps": 40,
+      "guidance": 3.5,
+      "sequence_length": 256,
+      "mode": "official",
+      "factor": 0,
+      "pair_count": 102
+    },
+    "records/supplement_3125702/official_0.2.png.config.json": {
+      "prompt": "a portrait photo of a man in a garden",
+      "seed": 123,
+      "height": 1024,
+      "width": 1024,
+      "steps": 40,
+      "guidance": 3.5,
+      "sequence_length": 256,
+      "mode": "official",
+      "factor": 0.2,
+      "pair_count": 102
+    },
+    "records/supplement_3125702/official_0.4.png.config.json": {
+      "prompt": "a portrait photo of a man in a garden",
+      "seed": 123,
+      "height": 1024,
+      "width": 1024,
+      "steps": 40,
+      "guidance": 3.5,
+      "sequence_length": 256,
+      "mode": "official",
+      "factor": 0.4,
+      "pair_count": 102
+    },
+    "records/supplement_3125702/target_only_0.0.png.config.json": {
+      "prompt": "a portrait photo of a man in a garden",
+      "seed": 123,
+      "height": 1024,
+      "width": 1024,
+      "steps": 40,
+      "guidance": 3.5,
+      "sequence_length": 256,
+      "mode": "target_only",
+      "factor": 0,
+      "pair_count": 102
+    },
+    "records/bald_3126203/official_0.8.png.config.json": {
+      "prompt": "a portrait photo of a man in a garden",
+      "seed": 123,
+      "height": 1024,
+      "width": 1024,
+      "steps": 40,
+      "guidance": 3.5,
+      "sequence_length": 256,
+      "mode": "official",
+      "factor": 0.8,
+      "pair_count": 102
+    },
+    "records/bald_diagnosis_3126242/direct_bald.config.json": {
+      "prompt": "a portrait photo of a bald man in a garden",
+      "seed": 123,
+      "height": 1024,
+      "width": 1024,
+      "num_inference_steps": 40,
+      "guidance_scale": 3.5,
+      "max_sequence_length": 256,
+      "callback": null,
+      "dtype": "bfloat16",
+      "offload": "sequential"
+    },
+    "metrics/existing_eight_analysis.json": {
+      "metric": "LPIPS AlexNet v0.1",
+      "resolution": "native1024",
+      "normalization": "RGB [-1,1]",
+      "device": "CPU",
+      "results": [
+        {
+          "job": "3124956",
+          "seed": 42,
+          "reference": "baseline_0.0.png",
+          "image": "baseline_0.0.png",
+          "lpips": 0.0
+        },
+        {
+          "job": "3124956",
+          "seed": 42,
+          "reference": "baseline_0.0.png",
+          "image": "official_0.0.png",
+          "lpips": 0.013571508228778839
+        },
+        {
+          "job": "3124956",
+          "seed": 42,
+          "reference": "baseline_0.0.png",
+          "image": "official_0.8.png",
+          "lpips": 0.02148689329624176
+        },
+        {
+          "job": "3124956",
+          "seed": 42,
+          "reference": "baseline_0.0.png",
+          "image": "target_only_0.8.png",
+          "lpips": 0.016674084588885307
+        },
+        {
+          "job": "3124956",
+          "seed": 42,
+          "reference": "official_0.0.png",
+          "image": "official_0.8.png",
+          "lpips": 0.015305515378713608
+        },
+        {
+          "job": "3124995",
+          "seed": 123,
+          "reference": "baseline_0.0.png",
+          "image": "baseline_0.0.png",
+          "lpips": 0.0
+        },
+        {
+          "job": "3124995",
+          "seed": 123,
+          "reference": "baseline_0.0.png",
+          "image": "official_0.0.png",
+          "lpips": 0.08927951008081436
+        },
+        {
+          "job": "3124995",
+          "seed": 123,
+          "reference": "baseline_0.0.png",
+          "image": "official_0.8.png",
+          "lpips": 0.11868409812450409
+        },
+        {
+          "job": "3124995",
+          "seed": 123,
+          "reference": "baseline_0.0.png",
+          "image": "target_only_0.8.png",
+          "lpips": 0.0940907746553421
+        },
+        {
+          "job": "3124995",
+          "seed": 123,
+          "reference": "official_0.0.png",
+          "image": "official_0.8.png",
+          "lpips": 0.04328785091638565
+        }
+      ]
+    },
+    "metrics/supplement_3125702_lpips.json": {
+      "metric": "LPIPS AlexNet v0.1",
+      "normalization": "RGB [-1,1]",
+      "resolution": "native1024",
+      "pairs": [
+        {
+          "reference": "old_official0",
+          "image": "official0",
+          "lpips": 0.0,
+          "pixel_equal": true,
+          "mae": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "reference": "baseline",
+          "image": "official0",
+          "lpips": 0.08927951008081436,
+          "pixel_equal": false,
+          "mae": 6.977413177490234,
+          "max_abs": 230.0
+        },
+        {
+          "reference": "baseline",
+          "image": "official0.2",
+          "lpips": 0.09601794183254242,
+          "pixel_equal": false,
+          "mae": 7.240694999694824,
+          "max_abs": 233.0
+        },
+        {
+          "reference": "baseline",
+          "image": "official0.4",
+          "lpips": 0.11018083989620209,
+          "pixel_equal": false,
+          "mae": 7.833556175231934,
+          "max_abs": 229.0
+        },
+        {
+          "reference": "baseline",
+          "image": "official0.8",
+          "lpips": 0.11868409812450409,
+          "pixel_equal": false,
+          "mae": 8.607623100280762,
+          "max_abs": 227.0
+        },
+        {
+          "reference": "baseline",
+          "image": "target0",
+          "lpips": 0.04915440455079079,
+          "pixel_equal": false,
+          "mae": 4.121569315592448,
+          "max_abs": 220.0
+        },
+        {
+          "reference": "baseline",
+          "image": "target0.8",
+          "lpips": 0.0940907746553421,
+          "pixel_equal": false,
+          "mae": 7.078413645426433,
+          "max_abs": 238.0
+        },
+        {
+          "reference": "official0",
+          "image": "official0.2",
+          "lpips": 0.0078165577724576,
+          "pixel_equal": false,
+          "mae": 1.1777493158976238,
+          "max_abs": 203.0
+        },
+        {
+          "reference": "official0",
+          "image": "official0.4",
+          "lpips": 0.027480142191052437,
+          "pixel_equal": false,
+          "mae": 2.6701625188191733,
+          "max_abs": 202.0
+        },
+        {
+          "reference": "official0",
+          "image": "official0.8",
+          "lpips": 0.04328785091638565,
+          "pixel_equal": false,
+          "mae": 3.9251426060994468,
+          "max_abs": 198.0
+        },
+        {
+          "reference": "official0.2",
+          "image": "official0.4",
+          "lpips": 0.018362581729888916,
+          "pixel_equal": false,
+          "mae": 2.128819783528646,
+          "max_abs": 202.0
+        },
+        {
+          "reference": "official0.4",
+          "image": "official0.8",
+          "lpips": 0.02163591794669628,
+          "pixel_equal": false,
+          "mae": 2.541367848714193,
+          "max_abs": 179.0
+        },
+        {
+          "reference": "target0",
+          "image": "target0.8",
+          "lpips": 0.11532047390937805,
+          "pixel_equal": false,
+          "mae": 8.598932266235352,
+          "max_abs": 219.0
+        }
+      ],
+      "files": {
+        "baseline": {
+          "path": "experiments/matrix_3124995/baseline_0.0.png",
+          "sha256": "9302754458b85e4b0c7f95d5f4cdd8dc4c44be0cbb746f8ff263021f16f8cd01"
+        },
+        "old_official0": {
+          "path": "experiments/matrix_3124995/official_0.0.png",
+          "sha256": "6b9464bd721ddfc2374e5a954f309b4c39a43071acb64a53dbf1f43b6fabbd4b"
+        },
+        "official0": {
+          "path": "experiments/supplement_3125702/official_0.0.png",
+          "sha256": "6b9464bd721ddfc2374e5a954f309b4c39a43071acb64a53dbf1f43b6fabbd4b"
+        },
+        "official0.2": {
+          "path": "experiments/supplement_3125702/official_0.2.png",
+          "sha256": "0195f684cb9fc72f3e0dc4f671c1e0b2dde827eea69441cbef0770f2e97ccb19"
+        },
+        "official0.4": {
+          "path": "experiments/supplement_3125702/official_0.4.png",
+          "sha256": "66d7a088e9caab6c1648104d964aa7637844b6687943d3fd2e25122e095027fc"
+        },
+        "official0.8": {
+          "path": "experiments/matrix_3124995/official_0.8.png",
+          "sha256": "39427043258008713212c56ed679db9c728db4d9babd19adcd379fc729c9e54f"
+        },
+        "target0": {
+          "path": "experiments/supplement_3125702/target_only_0.0.png",
+          "sha256": "889d83e688b842549b48361a6043937a805316bd61b3cbc336c4e0e5b062d0f5"
+        },
+        "target0.8": {
+          "path": "experiments/matrix_3124995/target_only_0.8.png",
+          "sha256": "055b8d48ef89623d5aef811cb878163e1c6ad76da93af350effb2d5403a9ae62"
+        }
+      },
+      "direction_equal": true,
+      "direction_max_abs_difference": 0.0
+    },
+    "metrics/bald_3126203_lpips.json": {
+      "metric": "LPIPS AlexNet v0.1",
+      "resolution": "native1024",
+      "normalization": "RGB [-1,1]",
+      "pairs": [
+        {
+          "reference": "old_official0",
+          "image": "official0",
+          "lpips": 0.0,
+          "pixel_equal": true,
+          "mae": 0.0
+        },
+        {
+          "reference": "baseline",
+          "image": "official0",
+          "lpips": 0.08927951008081436,
+          "pixel_equal": false,
+          "mae": 6.977413177490234
+        },
+        {
+          "reference": "baseline",
+          "image": "official0.4",
+          "lpips": 0.10429251194000244,
+          "pixel_equal": false,
+          "mae": 7.515306154886882
+        },
+        {
+          "reference": "baseline",
+          "image": "official0.8",
+          "lpips": 0.12090206146240234,
+          "pixel_equal": false,
+          "mae": 8.044620196024576
+        },
+        {
+          "reference": "official0",
+          "image": "official0",
+          "lpips": 0.0,
+          "pixel_equal": true,
+          "mae": 0.0
+        },
+        {
+          "reference": "official0",
+          "image": "official0.4",
+          "lpips": 0.02273706905543804,
+          "pixel_equal": false,
+          "mae": 2.152859687805176
+        },
+        {
+          "reference": "official0",
+          "image": "official0.8",
+          "lpips": 0.05254117399454117,
+          "pixel_equal": false,
+          "mae": 4.089966773986816
+        },
+        {
+          "reference": "official0.4",
+          "image": "official0.8",
+          "lpips": 0.03717789798974991,
+          "pixel_equal": false,
+          "mae": 3.2748133341471353
+        }
+      ],
+      "files": {
+        "baseline": {
+          "path": "experiments/matrix_3124995/baseline_0.0.png",
+          "sha256": "9302754458b85e4b0c7f95d5f4cdd8dc4c44be0cbb746f8ff263021f16f8cd01"
+        },
+        "old_official0": {
+          "path": "experiments/matrix_3124995/official_0.0.png",
+          "sha256": "6b9464bd721ddfc2374e5a954f309b4c39a43071acb64a53dbf1f43b6fabbd4b"
+        },
+        "official0": {
+          "path": "experiments/bald_3126203/official_0.0.png",
+          "sha256": "6b9464bd721ddfc2374e5a954f309b4c39a43071acb64a53dbf1f43b6fabbd4b"
+        },
+        "official0.4": {
+          "path": "experiments/bald_3126203/official_0.4.png",
+          "sha256": "27f408c1364a61c06bc2c99b51615e363d20cf32d251e15ec5d0355bd280edf6"
+        },
+        "official0.8": {
+          "path": "experiments/bald_3126203/official_0.8.png",
+          "sha256": "1ef008541708fd12be6365f90a0e7692327bee718370484aa4d7ce5715c295a2"
+        }
+      }
+    },
+    "records/bald_3126203/matrix_config.json": {
+      "status": "planned; not executed",
+      "resolution": 1024,
+      "steps": 40,
+      "guidance_scale": 3.5,
+      "max_sequence_length": 256,
+      "seeds": [
+        42,
+        123,
+        2026
+      ],
+      "cases": [
+        {
+          "id": "smile_portrait",
+          "prompt": "a portrait photo of a man in a garden",
+          "token": "man",
+          "variation": "smiling_man.yaml",
+          "target_prompt": "a portrait photo of a smiling man in a garden"
+        },
+        {
+          "id": "old_woman",
+          "prompt": "a portrait photo of a woman in a library",
+          "token": "woman",
+          "variation": "old_woman.yaml",
+          "target_prompt": "a portrait photo of an old woman in a library"
+        },
+        {
+          "id": "surprised_woman",
+          "prompt": "a portrait photo of a woman in a cafe",
+          "token": "woman",
+          "variation": "surprised_woman.yaml",
+          "target_prompt": "a portrait photo of a surprised woman in a cafe"
+        }
+      ],
+      "conditions": [
+        {
+          "mode": "baseline",
+          "factor": 0
+        },
+        {
+          "mode": "official",
+          "factor": 0
+        },
+        {
+          "mode": "official",
+          "factor": 0.8
+        },
+        {
+          "mode": "target_only",
+          "factor": 0.8
+        }
+      ],
+      "notes": "Independent small benchmark, not the paper's full 21-prompt benchmark. Preserve official YAML lists. Target-only is a diagnostic variant. Run one case/seed per bounded Slurm job; checkpoint each image."
+    },
+    "records/bald_3126203/metrics.json": {
+      "prompt": "a portrait photo of a man in a garden",
+      "seed": 123,
+      "case": {
+        "id": "bald_portrait",
+        "prompt": "a portrait photo of a man in a garden",
+        "token": "man",
+        "variation": "bald_man.yaml",
+        "target_prompt": "a portrait photo of a bald man in a garden"
+      },
+      "resolution": 1024,
+      "steps": 40,
+      "cfg": 3.5,
+      "pair_count": 102,
+      "modes": {
+        "official": "all-token reconstruction",
+        "target_only": "target-token replacement diagnostic"
+      },
+      "runs": [
+        {
+          "file": "official_0.0.png",
+          "mode": "official",
+          "factor": 0,
+          "seconds": 195.9688515663147,
+          "mae_vs_baseline": 6.97741174697876,
+          "mse_vs_baseline": 225.56919860839844
+        },
+        {
+          "file": "official_0.4.png",
+          "mode": "official",
+          "factor": 0.4,
+          "seconds": 184.1482870578766,
+          "mae_vs_baseline": 7.515305995941162,
+          "mse_vs_baseline": 249.0814666748047
+        },
+        {
+          "file": "official_0.8.png",
+          "mode": "official",
+          "factor": 0.8,
+          "seconds": 191.64248299598694,
+          "mae_vs_baseline": 8.04461669921875,
+          "mse_vs_baseline": 262.8877868652344
+        }
+      ],
+      "model_revision": "3de623fc3c33e44ffbe2bad470d0f45bccf2eb21",
+      "model_integrity_verified": true,
+      "yaml_sha256": "d3a91593cad9b53864b374baf50d830b001e00db3cc95efed4e512d1145bdbb3",
+      "baseline_sha256": "9302754458b85e4b0c7f95d5f4cdd8dc4c44be0cbb746f8ff263021f16f8cd01",
+      "sae_revision": "51c3ac09815815dbbcf7491148507a930e0d7944",
+      "source_sha256": {
+        "<UPSTREAM_ROOT>/examples/run_bald_seed123.py": "fb245e893926630beec1239697dde783bcf314a709551e6556cd973fcebac998",
+        "src/saedit_cpu.py": "005247c164dec3d696d9f98ae7a74b02beb5d8c12b7c499d3c63f07f8c5b0682",
+        "src/models/matryoshka_sae.py": "17c9042ce3c15c12f5165e413d3d58d0455e2805c866eaa36c9e3ef1c7639178",
+        "src/models/sae_base.py": "d66bcf30dcb9df17ed349686ed5dd0fe1d34ef070f44fbbd88b0e716963bce63"
+      },
+      "injection_numerics": [
+        {
+          "mode": "official",
+          "factor": 0,
+          "step": 0,
+          "scale": 0.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 0.999544084072113,
+          "direction_max_abs": 0.54296875,
+          "nonzero_direction_features": 6826,
+          "changed_latent_elements": 0,
+          "actual_increment_norm": 0.0,
+          "requested_increment_norm": 0.0
+        },
+        {
+          "mode": "official",
+          "factor": 0,
+          "step": 19,
+          "scale": 0.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 0.999544084072113,
+          "direction_max_abs": 0.54296875,
+          "nonzero_direction_features": 6826,
+          "changed_latent_elements": 0,
+          "actual_increment_norm": 0.0,
+          "requested_increment_norm": 0.0
+        },
+        {
+          "mode": "official",
+          "factor": 0,
+          "step": 39,
+          "scale": 0.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 0.999544084072113,
+          "direction_max_abs": 0.54296875,
+          "nonzero_direction_features": 6826,
+          "changed_latent_elements": 0,
+          "actual_increment_norm": 0.0,
+          "requested_increment_norm": 0.0
+        },
+        {
+          "mode": "official",
+          "factor": 0.4,
+          "step": 0,
+          "scale": 0.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 0.999544084072113,
+          "direction_max_abs": 0.54296875,
+          "nonzero_direction_features": 6826,
+          "changed_latent_elements": 0,
+          "actual_increment_norm": 0.0,
+          "requested_increment_norm": 0.0
+        },
+        {
+          "mode": "official",
+          "factor": 0.4,
+          "step": 19,
+          "scale": 6.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 0.999544084072113,
+          "direction_max_abs": 0.54296875,
+          "nonzero_direction_features": 6826,
+          "changed_latent_elements": 6811,
+          "actual_increment_norm": 5.993143081665039,
+          "requested_increment_norm": 5.993084907531738
+        },
+        {
+          "mode": "official",
+          "factor": 0.4,
+          "step": 39,
+          "scale": 6.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 0.999544084072113,
+          "direction_max_abs": 0.54296875,
+          "nonzero_direction_features": 6826,
+          "changed_latent_elements": 6811,
+          "actual_increment_norm": 5.993143081665039,
+          "requested_increment_norm": 5.993084907531738
+        },
+        {
+          "mode": "official",
+          "factor": 0.8,
+          "step": 0,
+          "scale": 0.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 0.999544084072113,
+          "direction_max_abs": 0.54296875,
+          "nonzero_direction_features": 6826,
+          "changed_latent_elements": 0,
+          "actual_increment_norm": 0.0,
+          "requested_increment_norm": 0.0
+        },
+        {
+          "mode": "official",
+          "factor": 0.8,
+          "step": 19,
+          "scale": 12.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 0.999544084072113,
+          "direction_max_abs": 0.54296875,
+          "nonzero_direction_features": 6826,
+          "changed_latent_elements": 6811,
+          "actual_increment_norm": 11.986259460449219,
+          "requested_increment_norm": 11.986169815063477
+        },
+        {
+          "mode": "official",
+          "factor": 0.8,
+          "step": 39,
+          "scale": 12.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 0.999544084072113,
+          "direction_max_abs": 0.54296875,
+          "nonzero_direction_features": 6826,
+          "changed_latent_elements": 6811,
+          "actual_increment_norm": 11.986259460449219,
+          "requested_increment_norm": 11.986169815063477
+        }
+      ]
+    },
+    "records/bald_3126203/model_verification.json": {
+      "revision": "3de623fc3c33e44ffbe2bad470d0f45bccf2eb21",
+      "files": [
+        {
+          "file": "model_index.json",
+          "size": 536,
+          "sha256": null,
+          "actual_size": 536,
+          "actual_sha256": null,
+          "actual_mtime_ns": 1793507423484222000,
+          "ok": true
+        },
+        {
+          "file": "scheduler/scheduler_config.json",
+          "size": 273,
+          "sha256": null,
+          "actual_size": 273,
+          "actual_sha256": null,
+          "actual_mtime_ns": 1793507423810111000,
+          "ok": true
+        },
+        {
+          "file": "text_encoder/config.json",
+          "size": 613,
+          "sha256": null,
+          "actual_size": 613,
+          "actual_sha256": null,
+          "actual_mtime_ns": 1793507424125132000,
+          "ok": true
+        },
+        {
+          "file": "text_encoder/model.safetensors",
+          "size": 246144352,
+          "sha256": "893d67a23f4693ed42cdab4cbad7fe3e727cf59609c40da28a46b5470f9ed082",
+          "actual_size": 246144352,
+          "actual_sha256": "893d67a23f4693ed42cdab4cbad7fe3e727cf59609c40da28a46b5470f9ed082",
+          "actual_mtime_ns": 1793512044123416539,
+          "ok": true
+        },
+        {
+          "file": "text_encoder_2/config.json",
+          "size": 782,
+          "sha256": null,
+          "actual_size": 782,
+          "actual_sha256": null,
+          "actual_mtime_ns": 1793508635625158000,
+          "ok": true
+        },
+        {
+          "file": "text_encoder_2/model-00001-of-00002.safetensors",
+          "size": 4994582224,
+          "sha256": "ec87bffd1923e8b2774a6d240c922a41f6143081d52cf83b8fe39e9d838c893e",
+          "actual_size": 4994582224,
+          "actual_sha256": "ec87bffd1923e8b2774a6d240c922a41f6143081d52cf83b8fe39e9d838c893e",
+          "actual_mtime_ns": 1793833406969836733,
+          "ok": true
+        },
+        {
+          "file": "text_encoder_2/model-00002-of-00002.safetensors",
+          "size": 4530066360,
+          "sha256": "a5640855b301fcdbceddfa90ae8066cd9414aff020552a201a255ecf2059da00",
+          "actual_size": 4530066360,
+          "actual_sha256": "a5640855b301fcdbceddfa90ae8066cd9414aff020552a201a255ecf2059da00",
+          "actual_mtime_ns": 1793529304199431871,
+          "ok": true
+        },
+        {
+          "file": "text_encoder_2/model.safetensors.index.json",
+          "size": 19885,
+          "sha256": null,
+          "actual_size": 19885,
+          "actual_sha256": null,
+          "actual_mtime_ns": 1793529304975835000,
+          "ok": true
+        },
+        {
+          "file": "tokenizer/merges.txt",
+          "size": 524619,
+          "sha256": null,
+          "actual_size": 524619,
+          "actual_sha256": null,
+          "actual_mtime_ns": 1793529305965529000,
+          "ok": true
+        },
+        {
+          "file": "tokenizer/special_tokens_map.json",
+          "size": 588,
+          "sha256": null,
+          "actual_size": 588,
+          "actual_sha256": null,
+          "actual_mtime_ns": 1793529306623750000,
+          "ok": true
+        },
+        {
+          "file": "tokenizer/tokenizer_config.json",
+          "size": 705,
+          "sha256": null,
+          "actual_size": 705,
+          "actual_sha256": null,
+          "actual_mtime_ns": 1793529307277778000,
+          "ok": true
+        },
+        {
+          "file": "tokenizer/vocab.json",
+          "size": 1059962,
+          "sha256": null,
+          "actual_size": 1059962,
+          "actual_sha256": null,
+          "actual_mtime_ns": 1793529308194284000,
+          "ok": true
+        },
+        {
+          "file": "tokenizer_2/special_tokens_map.json",
+          "size": 2543,
+          "sha256": null,
+          "actual_size": 2543,
+          "actual_sha256": null,
+          "actual_mtime_ns": 1793529308836928000,
+          "ok": true
+        },
+        {
+          "file": "tokenizer_2/spiece.model",
+          "size": 791656,
+          "sha256": "d60acb128cf7b7f2536e8f38a5b18a05535c9e14c7a355904270e15b0945ea86",
+          "actual_size": 791656,
+          "actual_sha256": "d60acb128cf7b7f2536e8f38a5b18a05535c9e14c7a355904270e15b0945ea86",
+          "actual_mtime_ns": 1793529311775430000,
+          "ok": true
+        },
+        {
+          "file": "tokenizer_2/tokenizer.json",
+          "size": 2424235,
+          "sha256": null,
+          "actual_size": 2424235,
+          "actual_sha256": null,
+          "actual_mtime_ns": 1793529312936837000,
+          "ok": true
+        },
+        {
+          "file": "tokenizer_2/tokenizer_config.json",
+          "size": 20817,
+          "sha256": null,
+          "actual_size": 20817,
+          "actual_sha256": null,
+          "actual_mtime_ns": 1793529313584879000,
+          "ok": true
+        },
+        {
+          "file": "transformer/config.json",
+          "size": 378,
+          "sha256": null,
+          "actual_size": 378,
+          "actual_sha256": null,
+          "actual_mtime_ns": 1793529314237267000,
+          "ok": true
+        },
+        {
+          "file": "transformer/diffusion_pytorch_model-00001-of-00003.safetensors",
+          "size": 9983040304,
+          "sha256": "d86a3038eacaa720682cb9b1da3c49fecf8a3ded605af4def6061eaa18903eb8",
+          "actual_size": 9983040304,
+          "actual_sha256": "d86a3038eacaa720682cb9b1da3c49fecf8a3ded605af4def6061eaa18903eb8",
+          "actual_mtime_ns": 1793540542837836127,
+          "ok": true
+        },
+        {
+          "file": "transformer/diffusion_pytorch_model-00002-of-00003.safetensors",
+          "size": 9949328904,
+          "sha256": "5e830704a83aa938dfaf23da308100a1c44b83fa084283abf1d163ea727e5f7a",
+          "actual_size": 9949328904,
+          "actual_sha256": "5e830704a83aa938dfaf23da308100a1c44b83fa084283abf1d163ea727e5f7a",
+          "actual_mtime_ns": 1793549461091447209,
+          "ok": true
+        },
+        {
+          "file": "transformer/diffusion_pytorch_model-00003-of-00003.safetensors",
+          "size": 3870584832,
+          "sha256": "0d9c7c663217d1c3d44a6deed4e1cf1ac09fbc2c4137c47de1e3d74c959833de",
+          "actual_size": 3870584832,
+          "actual_sha256": "0d9c7c663217d1c3d44a6deed4e1cf1ac09fbc2c4137c47de1e3d74c959833de",
+          "actual_mtime_ns": 1793552696415214065,
+          "ok": true
+        },
+        {
+          "file": "transformer/diffusion_pytorch_model.safetensors.index.json",
+          "size": 121262,
+          "sha256": null,
+          "actual_size": 121262,
+          "actual_sha256": null,
+          "actual_mtime_ns": 1793552697091570000,
+          "ok": true
+        },
+        {
+          "file": "vae/config.json",
+          "size": 820,
+          "sha256": null,
+          "actual_size": 820,
+          "actual_sha256": null,
+          "actual_mtime_ns": 1793552697744142000,
+          "ok": true
+        },
+        {
+          "file": "vae/diffusion_pytorch_model.safetensors",
+          "size": 167666902,
+          "sha256": "f5b59a26851551b67ae1fe58d32e76486e1e812def4696a4bea97f16604d40a3",
+          "actual_size": 167666902,
+          "actual_sha256": "f5b59a26851551b67ae1fe58d32e76486e1e812def4696a4bea97f16604d40a3",
+          "actual_mtime_ns": 1793506470269729889,
+          "ok": true
+        }
+      ],
+      "all_checked_match": true
+    },
+    "records/bald_3126203/sae_verification.json": {
+      "revision": "51c3ac09815815dbbcf7491148507a930e0d7944",
+      "files": [
+        {
+          "file": ".gitattributes",
+          "size": 1519,
+          "sha256": null,
+          "actual_sha256": null,
+          "actual_mtime_ns": 1793552741503967000,
+          "ok": true
+        },
+        {
+          "file": "README.md",
+          "size": 2063,
+          "sha256": null,
+          "actual_sha256": null,
+          "actual_mtime_ns": 1793552740901071000,
+          "ok": true
+        },
+        {
+          "file": "matryoshka_sae_top_300/config.json",
+          "size": 694,
+          "sha256": null,
+          "actual_sha256": null,
+          "actual_mtime_ns": 1793552742341770000,
+          "ok": true
+        },
+        {
+          "file": "matryoshka_sae_top_300/pytorch_model.bin",
+          "size": 2147764955,
+          "sha256": "306e45c15a086065fa5724b8d98e83e51dbe79fb44112f6bd051ad660d866086",
+          "actual_sha256": "306e45c15a086065fa5724b8d98e83e51dbe79fb44112f6bd051ad660d866086",
+          "actual_mtime_ns": 1793565714007895982,
+          "ok": true
+        }
+      ],
+      "all_checked_match": true
+    },
+    "records/bald_3126203/visualization_provenance.json": {
+      "source_sha256": {
+        "archive/results\\matrix_3124995\\baseline_0.0.png": "9302754458b85e4b0c7f95d5f4cdd8dc4c44be0cbb746f8ff263021f16f8cd01",
+        "archive/results\\bald_3126203\\official_0.0.png": "6b9464bd721ddfc2374e5a954f309b4c39a43071acb64a53dbf1f43b6fabbd4b",
+        "archive/results\\bald_3126203\\official_0.4.png": "27f408c1364a61c06bc2c99b51615e363d20cf32d251e15ec5d0355bd280edf6",
+        "archive/results\\bald_3126203\\official_0.8.png": "1ef008541708fd12be6365f90a0e7692327bee718370484aa4d7ce5715c295a2"
+      },
+      "head_crop_xyxy": [
+        320,
+        0,
+        700,
+        450
+      ],
+      "operation": "native full-image montage and identical-coordinate Lanczos crop; originals unchanged"
+    },
+    "records/bald_diagnosis_3126242/diagnosis.json": {
+      "model_revision": "3de623fc3c33e44ffbe2bad470d0f45bccf2eb21",
+      "source_sha256": {
+        "src/saedit_cpu.py": "005247c164dec3d696d9f98ae7a74b02beb5d8c12b7c499d3c63f07f8c5b0682",
+        "src/saedit.py": "9a667b3a84f0fd368427a97a29e719b85f4734450e6a1a55ef7fa071e76f96a2",
+        "src/models/matryoshka_sae.py": "17c9042ce3c15c12f5165e413d3d58d0455e2805c866eaa36c9e3ef1c7639178",
+        "src/variations/bald_man.yaml": "d3a91593cad9b53864b374baf50d830b001e00db3cc95efed4e512d1145bdbb3",
+        "<UPSTREAM_ROOT>/examples/diagnose_bald_seed123.py": "341e26e529637ea244e424f82a07c301dc453ab3af7a7c0bf75aa1156d744993"
+      },
+      "plain_generation_seconds": 247.0438928604126,
+      "directions": {
+        "bald": {
+          "shape": [
+            65536
+          ],
+          "dtype": "torch.bfloat16",
+          "norm": 0.999544084072113,
+          "nonzero": 6826,
+          "nan": 0,
+          "inf": 0,
+          "max_abs": 0.54296875,
+          "negative": 26
+        },
+        "smile": {
+          "shape": [
+            65536
+          ],
+          "dtype": "torch.bfloat16",
+          "norm": 1.000020146369934,
+          "nonzero": 6131,
+          "nan": 0,
+          "inf": 0,
+          "max_abs": 0.419921875,
+          "negative": 19
+        }
+      },
+      "direction_comparison": {
+        "cosine": 0.10788993537425995,
+        "difference_norm": 1.335456132888794
+      },
+      "replay": [
+        {
+          "factor": 0.4,
+          "callback_index": 0,
+          "scale": 0.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 1,
+          "scale": 0.16631144044593005,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.16617870330810547,
+            "nonzero": 6716,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.09033203125,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.19635352492332458,
+            "nonzero": 3816,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.013671875,
+            "negative": 1893
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 2,
+          "scale": 0.3602823761150602,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.35992196202278137,
+            "nonzero": 6753,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.1953125,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.41897132992744446,
+            "nonzero": 3953,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.03125,
+            "negative": 1965
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 3,
+          "scale": 0.586512897499968,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.5862087607383728,
+            "nonzero": 6766,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.318359375,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.6811860799789429,
+            "nonzero": 4002,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.048828125,
+            "negative": 1994
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 4,
+          "scale": 0.850368142769234,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.8496752977371216,
+            "nonzero": 6797,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4609375,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.9865562319755554,
+            "nonzero": 4047,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0693359375,
+            "negative": 2016
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 5,
+          "scale": 1.1581055339484454,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 1.1573033332824707,
+            "nonzero": 6801,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.62890625,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 1.3427107334136963,
+            "nonzero": 4054,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.095703125,
+            "negative": 2018
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 6,
+          "scale": 1.5170231739337439,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 1.5158158540725708,
+            "nonzero": 6805,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.82421875,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 1.7601709365844727,
+            "nonzero": 4056,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.1259765625,
+            "negative": 2020
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 7,
+          "scale": 1.9356329236264513,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 1.9387729167938232,
+            "nonzero": 6807,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 1.0546875,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 2.25167179107666,
+            "nonzero": 4074,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.1611328125,
+            "negative": 2030
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 8,
+          "scale": 2.4238622637752645,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 2.419149160385132,
+            "nonzero": 6809,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 1.3125,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 2.807884454727173,
+            "nonzero": 4079,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.19921875,
+            "negative": 2030
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 9,
+          "scale": 2.9932897287521913,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 2.9929511547088623,
+            "nonzero": 6810,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 1.625,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 3.473454475402832,
+            "nonzero": 4083,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.244140625,
+            "negative": 2032
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 10,
+          "scale": 3.657419495658905,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 3.655123710632324,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 1.984375,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 4.2429680824279785,
+            "nonzero": 4080,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.2978515625,
+            "negative": 2029
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 11,
+          "scale": 4.432001640742895,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 4.426162242889404,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 2.40625,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.13900899887085,
+            "nonzero": 4086,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.3642578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 12,
+          "scale": 5.335405658119499,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.330342769622803,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 2.890625,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.1870808601379395,
+            "nonzero": 4091,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4384765625,
+            "negative": 2033
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 13,
+          "scale": 6.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 14,
+          "scale": 6.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 15,
+          "scale": 6.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 16,
+          "scale": 6.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 17,
+          "scale": 6.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 18,
+          "scale": 6.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 19,
+          "scale": 6.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 20,
+          "scale": 6.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 21,
+          "scale": 6.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 22,
+          "scale": 6.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 23,
+          "scale": 6.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 24,
+          "scale": 6.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 25,
+          "scale": 6.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 26,
+          "scale": 6.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 27,
+          "scale": 6.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 28,
+          "scale": 6.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 29,
+          "scale": 6.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 30,
+          "scale": 6.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 31,
+          "scale": 6.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 32,
+          "scale": 6.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 33,
+          "scale": 6.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 34,
+          "scale": 6.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 35,
+          "scale": 6.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 36,
+          "scale": 6.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 37,
+          "scale": 6.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 38,
+          "scale": 6.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "callback_index": 39,
+          "scale": 6.0,
+          "used_by_next_denoise": false,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.993143081665039,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 3.25,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.957026481628418,
+            "nonzero": 4090,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4892578125,
+            "negative": 2031
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 0,
+          "scale": 0.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 1,
+          "scale": 0.3602823761150602,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.35992196202278137,
+            "nonzero": 6753,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.1953125,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.41897132992744446,
+            "nonzero": 3953,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.03125,
+            "negative": 1965
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 2,
+          "scale": 0.850368142769234,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.8496752977371216,
+            "nonzero": 6797,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4609375,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.9865562319755554,
+            "nonzero": 4047,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0693359375,
+            "negative": 2016
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 3,
+          "scale": 1.5170231739337439,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 1.5158158540725708,
+            "nonzero": 6805,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.82421875,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 1.7601709365844727,
+            "nonzero": 4056,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.1259765625,
+            "negative": 2020
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 4,
+          "scale": 2.4238622637752645,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 2.419149160385132,
+            "nonzero": 6809,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 1.3125,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 2.807884454727173,
+            "nonzero": 4079,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.19921875,
+            "negative": 2030
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 5,
+          "scale": 3.657419495658905,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 3.655123710632324,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 1.984375,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 4.2429680824279785,
+            "nonzero": 4080,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.2978515625,
+            "negative": 2029
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 6,
+          "scale": 5.335405658119499,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 5.330342769622803,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 2.890625,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 6.1870808601379395,
+            "nonzero": 4091,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.4384765625,
+            "negative": 2033
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 7,
+          "scale": 7.617940662279587,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 7.605844497680664,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 4.125,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 8.828484535217285,
+            "nonzero": 4089,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.6298828125,
+            "negative": 2032
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 8,
+          "scale": 10.722832801304278,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 10.718132019042969,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 5.8125,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 12.43864917755127,
+            "nonzero": 4093,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.8798828125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 9,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 10,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 11,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 12,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 13,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 14,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 15,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 16,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 17,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 18,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 19,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 20,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 21,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 22,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 23,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 24,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 25,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 26,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 27,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 28,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 29,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 30,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 31,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 32,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 33,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 34,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 35,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 36,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 37,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 38,
+          "scale": 12.0,
+          "used_by_next_denoise": true,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        },
+        {
+          "factor": 0.8,
+          "callback_index": 39,
+          "scale": 12.0,
+          "used_by_next_denoise": false,
+          "actual_latent_delta": {
+            "shape": [
+              1,
+              1,
+              65536
+            ],
+            "dtype": "torch.float32",
+            "norm": 11.986259460449219,
+            "nonzero": 6811,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 6.5,
+            "negative": 17
+          },
+          "target_embedding_delta": {
+            "shape": [
+              1,
+              1,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 13.907327651977539,
+            "nonzero": 4095,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.9814453125,
+            "negative": 2034
+          },
+          "nontarget_embedding_delta": {
+            "shape": [
+              1,
+              255,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "norm": 0.0,
+            "nonzero": 0,
+            "nan": 0,
+            "inf": 0,
+            "max_abs": 0.0,
+            "negative": 0
+          }
+        }
+      ],
+      "tokens": [
+        "",
+        "a",
+        "portrait",
+        "photo",
+        "of",
+        "",
+        "a",
+        "man",
+        "in",
+        "",
+        "a",
+        "garden"
+      ],
+      "target_indices": [
+        7
+      ],
+      "sae_training": false,
+      "original_target_latent": {
+        "shape": [
+          1,
+          1,
+          65536
+        ],
+        "dtype": "torch.bfloat16",
+        "norm": 5.016948699951172,
+        "nonzero": 415,
+        "nan": 0,
+        "inf": 0,
+        "max_abs": 2.328125,
+        "negative": 0
+      },
+      "reconstruction_target_delta": {
+        "shape": [
+          1,
+          1,
+          4096
+        ],
+        "dtype": "torch.float32",
+        "norm": 2.3911325931549072,
+        "nonzero": 4088,
+        "nan": 0,
+        "inf": 0,
+        "max_abs": 0.139404296875,
+        "negative": 2032
+      }
+    },
+    "records/bald_diagnosis_3126242/direction_artifact_hashes.json": [
+      {
+        "Algorithm": "SHA256",
+        "Hash": "32224EB6B29BFD6BE1F1948F8A0C748EBB7E0FD0871C4D1388F90EEF46125F83",
+        "Path": "archive/results\\bald_3126203\\direction.pt"
+      },
+      {
+        "Algorithm": "SHA256",
+        "Hash": "E4FDC7C78D85C1C32A665E4F8081806E5DCC0321C727D5BC38EB4D37D3ED1E83",
+        "Path": "archive/results\\matrix_3124995\\direction.pt"
+      }
+    ],
+    "records/bald_diagnosis_3126242/visualization_provenance.json": {
+      "archive/results\\matrix_3124995\\baseline_0.0.png": "9302754458b85e4b0c7f95d5f4cdd8dc4c44be0cbb746f8ff263021f16f8cd01",
+      "archive/results\\bald_diagnosis_3126242\\direct_bald.png": "3b1cade6f42acd481f3cca287bef9aa0ecde906c311914a6f4db1efec7f9d52a",
+      "archive/results\\bald_3126203\\official_0.8.png": "1ef008541708fd12be6365f90a0e7692327bee718370484aa4d7ce5715c295a2"
+    },
+    "records/integrity/flux_official_manifest.json": {
+      "revision": "3de623fc3c33e44ffbe2bad470d0f45bccf2eb21",
+      "files": [
+        {
+          "file": "model_index.json",
+          "size": 536,
+          "sha256": null
+        },
+        {
+          "file": "scheduler/scheduler_config.json",
+          "size": 273,
+          "sha256": null
+        },
+        {
+          "file": "text_encoder/config.json",
+          "size": 613,
+          "sha256": null
+        },
+        {
+          "file": "text_encoder/model.safetensors",
+          "size": 246144352,
+          "sha256": "893d67a23f4693ed42cdab4cbad7fe3e727cf59609c40da28a46b5470f9ed082"
+        },
+        {
+          "file": "text_encoder_2/config.json",
+          "size": 782,
+          "sha256": null
+        },
+        {
+          "file": "text_encoder_2/model-00001-of-00002.safetensors",
+          "size": 4994582224,
+          "sha256": "ec87bffd1923e8b2774a6d240c922a41f6143081d52cf83b8fe39e9d838c893e"
+        },
+        {
+          "file": "text_encoder_2/model-00002-of-00002.safetensors",
+          "size": 4530066360,
+          "sha256": "a5640855b301fcdbceddfa90ae8066cd9414aff020552a201a255ecf2059da00"
+        },
+        {
+          "file": "text_encoder_2/model.safetensors.index.json",
+          "size": 19885,
+          "sha256": null
+        },
+        {
+          "file": "tokenizer/merges.txt",
+          "size": 524619,
+          "sha256": null
+        },
+        {
+          "file": "tokenizer/special_tokens_map.json",
+          "size": 588,
+          "sha256": null
+        },
+        {
+          "file": "tokenizer/tokenizer_config.json",
+          "size": 705,
+          "sha256": null
+        },
+        {
+          "file": "tokenizer/vocab.json",
+          "size": 1059962,
+          "sha256": null
+        },
+        {
+          "file": "tokenizer_2/special_tokens_map.json",
+          "size": 2543,
+          "sha256": null
+        },
+        {
+          "file": "tokenizer_2/spiece.model",
+          "size": 791656,
+          "sha256": "d60acb128cf7b7f2536e8f38a5b18a05535c9e14c7a355904270e15b0945ea86"
+        },
+        {
+          "file": "tokenizer_2/tokenizer.json",
+          "size": 2424235,
+          "sha256": null
+        },
+        {
+          "file": "tokenizer_2/tokenizer_config.json",
+          "size": 20817,
+          "sha256": null
+        },
+        {
+          "file": "transformer/config.json",
+          "size": 378,
+          "sha256": null
+        },
+        {
+          "file": "transformer/diffusion_pytorch_model-00001-of-00003.safetensors",
+          "size": 9983040304,
+          "sha256": "d86a3038eacaa720682cb9b1da3c49fecf8a3ded605af4def6061eaa18903eb8"
+        },
+        {
+          "file": "transformer/diffusion_pytorch_model-00002-of-00003.safetensors",
+          "size": 9949328904,
+          "sha256": "5e830704a83aa938dfaf23da308100a1c44b83fa084283abf1d163ea727e5f7a"
+        },
+        {
+          "file": "transformer/diffusion_pytorch_model-00003-of-00003.safetensors",
+          "size": 3870584832,
+          "sha256": "0d9c7c663217d1c3d44a6deed4e1cf1ac09fbc2c4137c47de1e3d74c959833de"
+        },
+        {
+          "file": "transformer/diffusion_pytorch_model.safetensors.index.json",
+          "size": 121262,
+          "sha256": null
+        },
+        {
+          "file": "vae/config.json",
+          "size": 820,
+          "sha256": null
+        },
+        {
+          "file": "vae/diffusion_pytorch_model.safetensors",
+          "size": 167666902,
+          "sha256": "f5b59a26851551b67ae1fe58d32e76486e1e812def4696a4bea97f16604d40a3"
+        }
+      ]
+    },
+    "records/integrity/sae_official_manifest.json": {
+      "revision": "51c3ac09815815dbbcf7491148507a930e0d7944",
+      "files": [
+        {
+          "file": ".gitattributes",
+          "size": 1519,
+          "sha256": null
+        },
+        {
+          "file": "README.md",
+          "size": 2063,
+          "sha256": null
+        },
+        {
+          "file": "matryoshka_sae_top_300/config.json",
+          "size": 694,
+          "sha256": null
+        },
+        {
+          "file": "matryoshka_sae_top_300/pytorch_model.bin",
+          "size": 2147764955,
+          "sha256": "306e45c15a086065fa5724b8d98e83e51dbe79fb44112f6bd051ad660d866086"
+        }
+      ]
+    },
+    "records/integrity/t5_repair.json": {
+      "file": "text_encoder_2/model-00001-of-00002.safetensors",
+      "sha256": "ec87bffd1923e8b2774a6d240c922a41f6143081d52cf83b8fe39e9d838c893e",
+      "size": 4994582224,
+      "backup": "models/repair_staging/original_bad_a826b17ca2d2e090a94252085557dba890057c96961fc660479ecdddf5c961de.safetensors",
+      "revision": "3de623fc3c33e44ffbe2bad470d0f45bccf2eb21"
+    },
+    "records/matrix_3124956/lpips.json": {
+      "metric": "LPIPS",
+      "backbone": "alex",
+      "version": "0.1",
+      "resolution": "native",
+      "normalization": "RGB [-1,1]",
+      "torch": "2.8.0+cu128",
+      "results": [
+        {
+          "file": "baseline_0.0.png",
+          "mode": "baseline",
+          "factor": 0,
+          "lpips_alex": 0.0
+        },
+        {
+          "file": "official_0.0.png",
+          "mode": "official",
+          "factor": 0,
+          "lpips_alex": 0.013571508228778839
+        },
+        {
+          "file": "official_0.8.png",
+          "mode": "official",
+          "factor": 0.8,
+          "lpips_alex": 0.02148689329624176
+        },
+        {
+          "file": "target_only_0.8.png",
+          "mode": "target_only",
+          "factor": 0.8,
+          "lpips_alex": 0.016674084588885307
+        }
+      ]
+    },
+    "records/supplement_3125702/metrics.json": {
+      "prompt": "a portrait photo of a man in a garden",
+      "seed": 123,
+      "case": {
+        "id": "smile_portrait",
+        "prompt": "a portrait photo of a man in a garden",
+        "token": "man",
+        "variation": "smiling_man.yaml",
+        "target_prompt": "a portrait photo of a smiling man in a garden"
+      },
+      "resolution": 1024,
+      "steps": 40,
+      "cfg": 3.5,
+      "pair_count": 102,
+      "modes": {
+        "official": "all-token reconstruction",
+        "target_only": "target-token replacement diagnostic"
+      },
+      "runs": [
+        {
+          "file": "official_0.0.png",
+          "mode": "official",
+          "factor": 0,
+          "seconds": 225.30993843078613,
+          "mae_vs_baseline": 6.97741174697876,
+          "mse_vs_baseline": 225.56919860839844
+        },
+        {
+          "file": "official_0.2.png",
+          "mode": "official",
+          "factor": 0.2,
+          "seconds": 172.83506083488464,
+          "mae_vs_baseline": 7.240694522857666,
+          "mse_vs_baseline": 238.18003845214844
+        },
+        {
+          "file": "official_0.4.png",
+          "mode": "official",
+          "factor": 0.4,
+          "seconds": 169.12124729156494,
+          "mae_vs_baseline": 7.83355712890625,
+          "mse_vs_baseline": 262.0712890625
+        },
+        {
+          "file": "target_only_0.0.png",
+          "mode": "target_only",
+          "factor": 0,
+          "seconds": 170.10408997535706,
+          "mae_vs_baseline": 4.1215691566467285,
+          "mse_vs_baseline": 104.75975799560547
+        }
+      ],
+      "model_revision": "3de623fc3c33e44ffbe2bad470d0f45bccf2eb21",
+      "model_integrity_verified": true,
+      "sae_revision": "51c3ac09815815dbbcf7491148507a930e0d7944",
+      "source_sha256": {
+        "<UPSTREAM_ROOT>/examples/run_seed123_supplement.py": "6e1b126da3fb65dca360ed5a70b451f5c2016acd25747fd15a02f17c8e90d4c6",
+        "src/saedit_cpu.py": "005247c164dec3d696d9f98ae7a74b02beb5d8c12b7c499d3c63f07f8c5b0682",
+        "src/models/matryoshka_sae.py": "17c9042ce3c15c12f5165e413d3d58d0455e2805c866eaa36c9e3ef1c7639178",
+        "src/models/sae_base.py": "d66bcf30dcb9df17ed349686ed5dd0fe1d34ef070f44fbbd88b0e716963bce63"
+      },
+      "injection_numerics": [
+        {
+          "mode": "official",
+          "factor": 0,
+          "step": 0,
+          "scale": 0.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 0,
+          "actual_increment_norm": 0.0,
+          "requested_increment_norm": 0.0
+        },
+        {
+          "mode": "official",
+          "factor": 0,
+          "step": 19,
+          "scale": 0.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 0,
+          "actual_increment_norm": 0.0,
+          "requested_increment_norm": 0.0
+        },
+        {
+          "mode": "official",
+          "factor": 0,
+          "step": 39,
+          "scale": 0.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 0,
+          "actual_increment_norm": 0.0,
+          "requested_increment_norm": 0.0
+        },
+        {
+          "mode": "official",
+          "factor": 0.2,
+          "step": 0,
+          "scale": 0.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 0,
+          "actual_increment_norm": 0.0,
+          "requested_increment_norm": 0.0
+        },
+        {
+          "mode": "official",
+          "factor": 0.2,
+          "step": 19,
+          "scale": 3.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 6117,
+          "actual_increment_norm": 2.998215675354004,
+          "requested_increment_norm": 2.9982364177703857
+        },
+        {
+          "mode": "official",
+          "factor": 0.2,
+          "step": 39,
+          "scale": 3.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 6117,
+          "actual_increment_norm": 2.998215675354004,
+          "requested_increment_norm": 2.9982364177703857
+        },
+        {
+          "mode": "official",
+          "factor": 0.4,
+          "step": 0,
+          "scale": 0.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 0,
+          "actual_increment_norm": 0.0,
+          "requested_increment_norm": 0.0
+        },
+        {
+          "mode": "official",
+          "factor": 0.4,
+          "step": 19,
+          "scale": 6.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 6117,
+          "actual_increment_norm": 5.9965009689331055,
+          "requested_increment_norm": 5.9964728355407715
+        },
+        {
+          "mode": "official",
+          "factor": 0.4,
+          "step": 39,
+          "scale": 6.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 6117,
+          "actual_increment_norm": 5.9965009689331055,
+          "requested_increment_norm": 5.9964728355407715
+        },
+        {
+          "mode": "target_only",
+          "factor": 0,
+          "step": 0,
+          "scale": 0.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 0,
+          "actual_increment_norm": 0.0,
+          "requested_increment_norm": 0.0
+        },
+        {
+          "mode": "target_only",
+          "factor": 0,
+          "step": 19,
+          "scale": 0.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 0,
+          "actual_increment_norm": 0.0,
+          "requested_increment_norm": 0.0
+        },
+        {
+          "mode": "target_only",
+          "factor": 0,
+          "step": 39,
+          "scale": 0.0,
+          "target_indices": [
+            7
+          ],
+          "direction_norm": 1.000020146369934,
+          "direction_max_abs": 0.419921875,
+          "nonzero_direction_features": 6131,
+          "changed_latent_elements": 0,
+          "actual_increment_norm": 0.0,
+          "requested_increment_norm": 0.0
+        }
+      ]
+    },
+    "configs/completed_experiments.json": {
+      "prompt": "a portrait photo of a man in a garden",
+      "seeds": [
+        42,
+        123
+      ],
+      "width": 1024,
+      "height": 1024,
+      "steps": 40,
+      "guidance": 3.5,
+      "sequence_length": 256,
+      "dtype": "bfloat16",
+      "offload": "sequential_cpu",
+      "upstream_commit": "fc6e6704195375b06fb97cd7cc7389087cad19b9",
+      "official_configs": [
+        "src/variations/smiling_man.yaml",
+        "src/variations/bald_man.yaml"
+      ],
+      "scope_note": "Only image_index.json enumerates completed conditions. This is not a proposed multi-attribute matrix."
+    },
+    "configs/official_config_provenance.json": [
+      {
+        "name": "bald_man.yaml",
+        "official_path": "src/variations/bald_man.yaml",
+        "sha256": "d3a91593cad9b53864b374baf50d830b001e00db3cc95efed4e512d1145bdbb3",
+        "pair_count": 102,
+        "target_token": "man",
+        "source": "https://github.com/ronen94/SAEdit/blob/fc6e6704195375b06fb97cd7cc7389087cad19b9/src/variations/bald_man.yaml"
+      },
+      {
+        "name": "smiling_man.yaml",
+        "official_path": "src/variations/smiling_man.yaml",
+        "sha256": "d39d5a753126f8ddefc955211a61c70962417d66a9c2a03f36f4f9c56e97efdb",
+        "pair_count": 102,
+        "target_token": "man",
+        "source": "https://github.com/ronen94/SAEdit/blob/fc6e6704195375b06fb97cd7cc7389087cad19b9/src/variations/smiling_man.yaml"
+      }
+    ],
+    "assets/PROVENANCE.json": {
+      "operation": "Non-generative montage, Lanczos resize and coordinate crops; originals unchanged",
+      "mouth_crop_xyxy": [
+        400,
+        270,
+        620,
+        410
+      ],
+      "head_crop_xyxy": [
+        320,
+        0,
+        700,
+        450
+      ],
+      "original_image_index": "../audit/image_index.json",
+      "figure_groups": {
+        "smiling_seed123.jpg": [
+          "3124995-baseline_0.0",
+          "3124995-official_0.0",
+          "3125702-official_0.2",
+          "3125702-official_0.4",
+          "3124995-official_0.8"
+        ],
+        "reconstruction_seed123.jpg": [
+          "3124995-baseline_0.0",
+          "3124995-official_0.0",
+          "3125702-target_only_0.0",
+          "3124995-target_only_0.8"
+        ],
+        "baldness_seed123.jpg": [
+          "3124995-baseline_0.0",
+          "3126203-official_0.0",
+          "3126203-official_0.4",
+          "3126203-official_0.8"
+        ],
+        "baldness_direct_prompt.jpg": [
+          "3124995-baseline_0.0",
+          "3126242-direct_bald",
+          "3126203-official_0.8"
+        ]
+      }
+    },
+    "audit/direction_artifact_hashes.json": [
+      {
+        "source": "experiments/matrix_3124956/direction.pt",
+        "sha256": "e4fdc7c78d85c1c32a665e4f8081806e5dcc0321c727d5bc38eb4d37d3ed1e83",
+        "bytes": 132663,
+        "included_binary": false
+      },
+      {
+        "source": "experiments/matrix_3124995/direction.pt",
+        "sha256": "e4fdc7c78d85c1c32a665e4f8081806e5dcc0321c727d5bc38eb4d37d3ed1e83",
+        "bytes": 132663,
+        "included_binary": false
+      },
+      {
+        "source": "experiments/supplement_3125702/direction.pt",
+        "sha256": "e4fdc7c78d85c1c32a665e4f8081806e5dcc0321c727d5bc38eb4d37d3ed1e83",
+        "bytes": 132663,
+        "included_binary": false
+      },
+      {
+        "source": "experiments/bald_3126203/direction.pt",
+        "sha256": "32224eb6b29bfd6be1f1948f8a0c748ebb7e0fd0871c4d1388f90eef46125f83",
+        "bytes": 132663,
+        "included_binary": false
+      }
+    ]
+  },
+  "archive_path_by_sha256": {
+    "858b7faf9eddd5aec1e90c6a53d637001cee21da4cf82d863cd8342e45b4bcfc": "records/matrix_3124956/metrics.json",
+    "007b869c4b04d3d1f0466f466b52e36c3ad7143d74826ec07fa91956e7da97ce": "records/matrix_3124995/metrics.json",
+    "37428158d553d22363c79a7cdd6e9580f38b7367c994c87596c3c3326a4b99da": "records/supplement_3125702/official_0.0.png.config.json",
+    "099b5df428312d8dfde5902e46c28970fddc1958e538127c8b7932d5d608909d": "records/supplement_3125702/official_0.2.png.config.json",
+    "b750a1d0bfef381a2e1d71926fcbf5c1215f9a10286663a31d556694423fdc12": "records/supplement_3125702/official_0.4.png.config.json",
+    "57fe2fae0251c7d79a752280860aa7aa0b936eec9aa7f74175c845643251739c": "records/supplement_3125702/target_only_0.0.png.config.json",
+    "c7202ad91fd28d2940d83e05620e0867a4e2405370293cb1dae0df4bd0deef1a": "records/bald_3126203/official_0.8.png.config.json",
+    "f3342b01c162b2491774585b8c2b438bd6346e060a5f009b552b4be47ba2c0bc": "records/bald_diagnosis_3126242/direct_bald.config.json",
+    "7557c752d2fe2a8035b4220c90cc2d71ccc5ca195bf6d8930b2bfc88d71be628": "metrics/existing_eight_analysis.json",
+    "b41a5a960e95c3951adb1f16169e8aeba3c7c8ff11eff8253b3d800114fdf2fd": "metrics/supplement_3125702_lpips.json",
+    "bd3ae3c7285c8c8ef691b68f01a3728c42adb1572a67fde09f1634d042489279": "metrics/bald_3126203_lpips.json",
+    "3d300b232371a91fa90ae22abaa48af2f8299524ed24476cdc3ed2036fb97de1": "records/bald_3126203/matrix_config.json",
+    "443c9a2a60231601a3e8e5153841bd4521c68d9cbb53651a9be0050d0805f099": "records/bald_3126203/metrics.json",
+    "b25bf926ae9f5f1684450f8f8e2a4aa9d07c784b2ea0803fe18600716a99e3e8": "records/bald_3126203/model_verification.json",
+    "92686c773f0e1df3f04cca926a2fffe4cc3e610a090e805a98b9e76124cb8b05": "records/bald_3126203/sae_verification.json",
+    "9f4f887e956f17570479fab8668dbe1f10814ed054e38bf5a382937c286f034b": "records/bald_3126203/visualization_provenance.json",
+    "f9d48e8d71c923f3d70f2971327bae77157784b3cc3b2b4bcf584f96000c0cf6": "records/bald_diagnosis_3126242/diagnosis.json",
+    "036ea2c50a29682d7390ba00cc62890ac77f96eb437067189c7badef3e572ee4": "records/bald_diagnosis_3126242/direction_artifact_hashes.json",
+    "905f05751f2c763028f11a387b0096ba7b106ffc525e10da1ee741c196482a14": "records/bald_diagnosis_3126242/visualization_provenance.json",
+    "c01e1b8ba6fb56daa187bfe021eb4d210c0e62969323986be2b1ee4dc79a3d3c": "records/integrity/flux_official_manifest.json",
+    "52f61bbf693946b5ca61a70b83f5adb2128099f24213a2516f992eb159ec9767": "records/integrity/sae_official_manifest.json",
+    "a065537cfbc136c6a1122f7a1b1a26dc9318fc5b006ba038d2aecd433d99609c": "records/integrity/t5_repair.json",
+    "b2eaa57560ce841537bc391748dbdfd5ddf160e4179105852a0ca9de945a589d": "records/matrix_3124956/lpips.json",
+    "0ed79447a67f4a3c2e4bb9b28ec34c1346deff95f9572e62a3c43b4ae3cd11d4": "records/supplement_3125702/metrics.json",
+    "c55f843454291c6f5b39e3441ae48efbe155089bb8b139d0af24526ba0682054": "configs/completed_experiments.json",
+    "74d8cf1a1cc184c5e657bf9934baef1ede09900a5affe9a10e06f97a7ffc6e36": "configs/official_config_provenance.json",
+    "0f867c0f9e1add5d92c5bfd422d655172a3107afb4d1cd03552bedb52abb73c5": "assets/PROVENANCE.json",
+    "69677a7fff26b8c408dc7cec751f0227db17b97ef9912c0f4368f162899a18da": "audit/direction_artifact_hashes.json"
+  }
+}

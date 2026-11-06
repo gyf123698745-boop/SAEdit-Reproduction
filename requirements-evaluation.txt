@@ -1,0 +1,5 @@
+# Actual additional evaluation packages used outside the inference venv.
+# PyTorch remains the inference environment's 2.8.0 installation.
+lpips==0.1.4
+torchvision==0.23.0
+scipy==1.15.3

@@ -1,0 +1,25 @@
+{
+  "revision": "51c3ac09815815dbbcf7491148507a930e0d7944",
+  "files": [
+    {
+      "file": ".gitattributes",
+      "size": 1519,
+      "sha256": null
+    },
+    {
+      "file": "README.md",
+      "size": 2063,
+      "sha256": null
+    },
+    {
+      "file": "matryoshka_sae_top_300/config.json",
+      "size": 694,
+      "sha256": null
+    },
+    {
+      "file": "matryoshka_sae_top_300/pytorch_model.bin",
+      "size": 2147764955,
+      "sha256": "306e45c15a086065fa5724b8d98e83e51dbe79fb44112f6bd051ad660d866086"
+    }
+  ]
+}
